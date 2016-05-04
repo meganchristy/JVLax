@@ -148,10 +148,6 @@ li:hover{
 	background-color: rgb(0, 0, 102);
 }
 
-.active {
-    background-color:#556677;
-}
-
 .floatLeft {
 	float: left;
 }
@@ -162,9 +158,5 @@ li:hover{
 
 @font-face{
 	font-family: 'Collegiate';
-	src:url("../fonts/sf-collegiate/TrueType/SFCollegiate.ttf") format("truetype");
-
+	src:url("../fonts/sf-collegiate/TrueType/SFCollegiate.ttf") format("truetype"); 
 }
-
-.fadein { position:relative; width:500px; height:332px; }
-.fadein img { position:absolute; left:0; top:0; }
