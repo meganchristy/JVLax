@@ -1,13 +1,10 @@
 /* This is the styles for all about fruit */
 
 body {
-	background-color: rgb(0, 0, 102);
-	background-image: url("../images/grass.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin:0;
 
-	font-family: 'Asap', sans-serif;
+	font-family: 'Economica', sans-serif;
+	margin-left: 0;
+	margin-right: 0
 }
 
 p{
@@ -15,14 +12,14 @@ p{
 	font-size: 30px;
 	text-align: center;
 
-	font-family: 'Asap', sans-serif;
+	font-family: 'Economica', sans-serif;
 }
 
 h1{
 	color: white;
 	background: rgba(0, 0, 102, .75);
 	text-align: center;
-	font-size: 8em;
+	font-size: 6.5em;
 
 	font-family: 'Collegiate', cursive;
 	
@@ -30,6 +27,10 @@ h1{
 	margin-top: 40px;
 	padding-top: 30px;
 
+}
+
+h3{
+	font-size: 1.5em;
 }
 
 th{
@@ -52,7 +53,7 @@ th{
 	font-size: 30px;
 	text-align: center;
 
-	font-family: 'Asap', sans-serif;
+	font-family: 'Economica', sans-serif;
 }
 
 .schedule{
@@ -71,7 +72,7 @@ th{
 	font-size: 30px;
 	text-align: center;
 
-	font-family: 'Asap', sans-serif;
+	font-family: 'Economica', sans-serif;
 }
 
 
@@ -86,11 +87,6 @@ th{
 	background-size: 235px;
 }
 
-#opposingTeamLogo {
-	float: right;
-	background-image: url("../images/bbnLogo.png");
-}
-
 .teamNameSchedule {
 	text-align: left;
 }
@@ -99,29 +95,32 @@ li{
 	color: white;
 	display: inline-block;
 	text-align: center;
-	width: 24%;
 
-	font-family: 'Asap', sans-serif;
+	width: 19.57%;
 
+	font-family: 'Economica', sans-serif;
+
+}
+
+span {
+	padding-top: 40px;
 }
 
 ul{
-	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	background: rgba(0, 0, 102, .75);
 	font-size: 2em;
+	list-style-type: none;
 }
 
 li:hover{
-	background-color: white;
-	color: rgb(0, 0, 102);
+	background-color: rgba(0, 0, 102, 0.75);
+	color: white;
 }
 
 .dropdown-content{
 	display: none;
 	position: absolute;
-	background-color: white;
 	width: 100%;
 	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 	
@@ -129,10 +128,12 @@ li:hover{
 
 .dropdown {
 	position: relative;
+	color: rgb(0,0,102)
 }
 
 .dropdown:hover .dropdown-content {
 	display: block;
+	color: white;
 }
 
 .dropdown-content a{
@@ -141,6 +142,7 @@ li:hover{
 	padding: 10px 16px;
 	text-decoration: none;
 	display: block;
+	padding: 10px 16px;
 }
 
 .dropdown-content a:hover{
@@ -159,4 +161,27 @@ li:hover{
 @font-face{
 	font-family: 'Collegiate';
 	src:url("../fonts/sf-collegiate/TrueType/SFCollegiate.ttf") format("truetype"); 
+}
+
+#dot{
+	height: 15px;
+	width: 15px;
+	margin-top: 10px;
+	float: left;
+	padding-left: 15px
+}
+
+.homeButton {
+	text-decoration: none;
+	color: white;
+}
+
+button{
+	height:40px;
+	width: 80px;
+	font-family: 'Economica', sans-serif;
+	color: rgb(0,0,102);
+	background-color: white;
+	font-size: 30px;
+	border-radius: 15px;
 }
