@@ -4,7 +4,8 @@ body {
 
 	font-family: 'Economica', sans-serif;
 	margin-left: 0;
-	margin-right: 0
+	margin-right: 0;
+	background-color:grey;
 }
 
 p{
@@ -77,14 +78,82 @@ th{
 
 
 #score{
-	font-size: 35pt;
+	background-color: rgba(0, 0, 102, .75);
+	font-size: 60px;
+	color: white;
+	font-family: 'Economica', sans-serif;
+
 	text-align: center;
+	
+	width: 47%;
+	height: 270px;
 }
 
-#topBox{
+h4{
+	font-size: 1em;
+}
+
+#smBox{
 	background-image: url("../images/smLogo.gif");
 	background-repeat: no-repeat;
 	background-size: 235px;
+	width: 20%;
+	height: 250px;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+}
+
+#bbnBox{
+	background-image: url("../images/bbnLogo.png");
+	background-repeat: no-repeat;
+	background-size: 200px;
+	width: 19%;
+	height: 250px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+#middleMenu {
+	margin-top: 30px;
+	margin-left: 90px;
+}
+
+#rivsBox{
+	/*background-image: url("../images/redwingLogo.png");*/
+	background-repeat: no-repeat;
+	background-size: 310px;
+	width: 19%;
+	height: 250px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+#riversPic {
+	margin-top:50px;
+}
+
+#noblesPic{
+	margin-top: 25px;
+}
+
+#lawrenceBox{
+	/*background-image: url("../images/lawrenceLogo.png");*/
+	background-repeat: no-repeat;
+	background-size: 310px;
+	width: 19%;
+	height: 250px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+#noblesBox{
+	/*background-image: url("../images/noblesLogo.png");*/
+	background-repeat: no-repeat;
+	background-size: 310px;
+	width: 19%;
+	height: 250px;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
 }
 
 .teamNameSchedule {
@@ -111,11 +180,13 @@ ul{
 	padding: 0;
 	font-size: 2em;
 	list-style-type: none;
+	background-color: rgba(0, 0, 102, 0.75);
+	color: white;
 }
 
 li:hover{
-	background-color: rgba(0, 0, 102, 0.75);
-	color: white;
+	background-color: white;
+	color: rgb(0,0,102);
 }
 
 .dropdown-content{
@@ -128,7 +199,7 @@ li:hover{
 
 .dropdown {
 	position: relative;
-	color: rgb(0,0,102)
+	color: white;
 }
 
 .dropdown:hover .dropdown-content {
@@ -152,10 +223,16 @@ li:hover{
 
 .floatLeft {
 	float: left;
+	margin: 0;
 }
 
 .floatRight {
 	float: right;
+}
+
+.noFloat{
+	float: none;
+	margin-top: 330px;
 }
 
 @font-face{
@@ -184,4 +261,18 @@ button{
 	background-color: white;
 	font-size: 30px;
 	border-radius: 15px;
+}
+
+a:link{
+	text-decoration: none;
+	color: rgb(0, 0, 102);
+}
+
+a{
+	color: white;
+}
+
+a:hover{
+	color: rgb(0,0,102);
+	text-decoration: none;
 }
