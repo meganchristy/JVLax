@@ -1,9 +1,9 @@
 //JQuery
-var numberOfPictures = 23;
+var numberOfPictures = 38;
 var timer;
 
-var picList = new Array(24);
-var captionData = new Array(24);
+var picList = new Array(39);
+var captionData = new Array(39);
 var whichPic = 0; //0 means first pic
 
 var fButtonListener;
@@ -81,6 +81,21 @@ picList[20] = "images/slideshowPics/p20.jpg";
 picList[21] = "images/slideshowPics/p21.jpg";
 picList[22] = "images/slideshowPics/p22.jpg";
 picList[23] = "images/slideshowPics/p23.jpg";
+picList[24] = "images/slideshowPics/p24.jpg";
+picList[25] = "images/slideshowPics/p25.jpg";
+picList[26] = "images/slideshowPics/p26.jpg";
+picList[27] = "images/slideshowPics/p27.jpg";
+picList[28] = "images/slideshowPics/p28.jpg";
+picList[29] = "images/slideshowPics/p29.jpg";
+picList[30] = "images/slideshowPics/p30.jpg";
+picList[31] = "images/slideshowPics/p31.jpg";
+picList[32] = "images/slideshowPics/p32.jpg";
+picList[33] = "images/slideshowPics/p33.jpg";
+picList[34] = "images/slideshowPics/p34.jpg";
+picList[35] = "images/slideshowPics/p35.jpg";
+picList[36] = "images/slideshowPics/p36.jpg";
+picList[37] = "images/slideshowPics/p37.jpg";
+picList[38] = "images/slideshowPics/p38.jpg";
 
 captionData[0] = "Taylor working the net";
 captionData[1] = "Megan looking for a pass";
@@ -106,6 +121,21 @@ captionData[20] = "Clementine keeping the ball away from her defender";
 captionData[21] = "Mary working hard";
 captionData[22] = "Lindsay going for a ground ball";
 captionData[23] = "Grace playing great defense";
+captionData[24] = "Kerrie playing great";
+captionData[25] = "Sanjna watching the ball move down the field";
+captionData[26] = "Ginny beating her defender";
+captionData[27] = "Hannah cradling around";
+captionData[28] = "Clementine going for the catch";
+captionData[29] = "'St. Mark's on 3... ONE TWO THREE, ST. MARK'S!";
+captionData[30] = "Clementine heading to the net";
+captionData[31] = "Mary working hard to defend the ball";
+captionData[32] = "Megan getting set at the draw";
+captionData[33] = "Clementine cradling the invisible ball";
+captionData[34] = "Close up of Clementine!";
+captionData[35] = "Megan cutting to the ball";
+captionData[36] = "Ginny avoiding her defender";
+captionData[37] = "Clementine chasing the ball";
+captionData[38] = "Blaine vs. her defender";
 
 $(document).ready(function(){
 
