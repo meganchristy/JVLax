@@ -9,6 +9,44 @@ var whichPic = 0; //0 means first pic
 var fButtonListener;
 var bButtonListener;
 
+//typewriter
+var text="St. Mark's Girls Lacrosse";
+var delay=50;
+var currentChar=1;
+var destination="[not defined]";
+
+function type()
+{
+  if (document.getElementById)
+  {
+    var dest=document.getElementById(destination);
+    if (dest)
+    {
+      dest.innerHTML=text.substr(0, currentChar);
+      currentChar++
+      if (currentChar>text.length)
+      {
+        currentChar=1;
+        setTimeout("type()", 5000);
+      }
+      else
+      {
+        setTimeout("type()", delay);
+      }
+    }
+  }
+}
+
+function startTyping(textParam, delayParam, destinationParam)
+{
+  text=textParam;
+  delay=delayParam;
+  currentChar=1;
+  destination=destinationParam;
+  type();
+}
+
+
 function setPicture(){
 
 	var rndNum = Math.floor(Math.random()*numberOfPictures);
@@ -16,6 +54,7 @@ function setPicture(){
 
 	$('body').css("background-image", ("url(" + picName +")") );
 };
+
 
 //populate array
 picList[0] = "images/slideshowPics/p0.jpg";
@@ -69,6 +108,8 @@ captionData[22] = "Lindsay going for a ground ball";
 captionData[23] = "Grace playing great defense";
 
 $(document).ready(function(){
+
+	startTyping(text, 75, "textDestination");
 
 	$('body').css({
    
